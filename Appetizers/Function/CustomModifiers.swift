@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-struct CustomModifiers: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct StandardButtonStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .buttonStyle(.bordered)
+            .tint(.brandPrimary)
+            .controlSize(.large)
     }
 }
 
-#Preview {
-    CustomModifiers()
+extension View {
+    func standardButtonStyle() -> some View {
+        self.modifier(StandardButtonStyle())
+    }
 }
