@@ -25,6 +25,7 @@
 		A075035C2ACC430D004F5F7E /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075035B2ACC430D004F5F7E /* EmptyState.swift */; };
 		A075035E2ACC5B57004F5F7E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075035D2ACC5B57004F5F7E /* Order.swift */; };
 		A07503602ACCC66A004F5F7E /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075035F2ACCC66A004F5F7E /* CustomModifiers.swift */; };
+		A07503632ACDD4AD004F5F7E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07503622ACDD4AD004F5F7E /* Date+Ext.swift */; };
 		A08CA7AA2AC7FE9000336003 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA7A92AC7FE9000336003 /* AppetizerListCell.swift */; };
 		A08CA7AC2AC7FF5400336003 /* NetworkMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA7AB2AC7FF5400336003 /* NetworkMananger.swift */; };
 		A08CA7AE2AC800D800336003 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA7AD2AC800D800336003 /* APError.swift */; };
@@ -72,6 +73,7 @@
 		A075035B2ACC430D004F5F7E /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		A075035D2ACC5B57004F5F7E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A075035F2ACCC66A004F5F7E /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		A07503622ACDD4AD004F5F7E /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		A08CA7A92AC7FE9000336003 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		A08CA7AB2AC7FF5400336003 /* NetworkMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMananger.swift; sourceTree = "<group>"; };
 		A08CA7AD2AC800D800336003 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				A02A54D92AC7690F001997BB /* AppetizersApp.swift */,
 				A08CA7BA2AC84FF100336003 /* Function */,
+				A07503612ACDD48D004F5F7E /* Extensions */,
 				A08CA7BB2AC8501B00336003 /* DataModel */,
 				A075035A2ACC3FCC004F5F7E /* DataRequest */,
 				A02A550B2AC7DB04001997BB /* Screens */,
@@ -163,6 +166,15 @@
 				A075034C2ACA00C5004F5F7E /* RemoteImage.swift */,
 			);
 			path = DataRequest;
+			sourceTree = "<group>";
+		};
+		A07503612ACDD48D004F5F7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A07503562ACC2243004F5F7E /* String+Ext.swift */,
+				A07503622ACDD4AD004F5F7E /* Date+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A08CA7B12AC83DB600336003 /* AppetizerList */ = {
@@ -202,7 +214,6 @@
 				A075035F2ACCC66A004F5F7E /* CustomModifiers.swift */,
 				A08CA7AD2AC800D800336003 /* APError.swift */,
 				A08CA7B22AC83E0D00336003 /* Alert.swift */,
-				A07503562ACC2243004F5F7E /* String+Ext.swift */,
 				A08CA7B42AC8431900336003 /* LoadingView.swift */,
 			);
 			path = Function;
@@ -352,6 +363,7 @@
 				A02A550D2AC7EB96001997BB /* Appetizer.swift in Sources */,
 				A08CA7AE2AC800D800336003 /* APError.swift in Sources */,
 				A08CA7AA2AC7FE9000336003 /* AppetizerListCell.swift in Sources */,
+				A07503632ACDD4AD004F5F7E /* Date+Ext.swift in Sources */,
 				A07503512ACC17FB004F5F7E /* APButton.swift in Sources */,
 				A08CA7B02AC8349500336003 /* AppetizerListViewModel.swift in Sources */,
 				A075035E2ACC5B57004F5F7E /* Order.swift in Sources */,

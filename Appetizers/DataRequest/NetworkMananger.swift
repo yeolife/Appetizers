@@ -72,6 +72,7 @@ final class NetworkMananger {
         
         // 캐시 먼저 확인
         let cacheKey = NSString(string: urlString)
+
         
         if let image = cache.object(forKey: cacheKey) {
             completed(image)
@@ -85,7 +86,7 @@ final class NetworkMananger {
         }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-            guard let data = data, let image = UIImage(data: data) else {
+            guard let data, let image = UIImage(data: data) else {
                 completed(nil)
                 return
             }

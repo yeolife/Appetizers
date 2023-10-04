@@ -16,6 +16,21 @@ struct AppetizerListCell: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
+//             위의 방법에 비해 매우 간단하지만 단점으로는 이미지가 캐시되지 않음
+//            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+//                image
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 120, height: 90)
+//                    .cornerRadius(8)
+//            } placeholder: {
+//                Image("emptyList")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 120, height: 90)
+//                    .cornerRadius(8)
+//            }
+
             VStack(alignment: .leading, spacing: 5) {
                 Text(appetizer.name)
                     .font(.title2)
